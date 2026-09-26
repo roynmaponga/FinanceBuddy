@@ -1,3 +1,12 @@
 spring:
   application:
-    name: backend
+    name: FinanceBuddy
+
+  datasource:
+    url: jdbc:postgresql://localhost:5432/FinanceBuddy
+    username: postgres
+    password: ${FINANCE_BUDDY_DB_PASSWORD}
+
+  jpa:
+    hibernate:
+      ddl-auto: none
